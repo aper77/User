@@ -1,0 +1,22 @@
+<html>
+<body>
+<div><H3>Our Users</H3></div>
+<br>
+{{#user}}
+    <div>
+        User - <b>{{id}}</b>
+        <span>{{username}}</span>
+        <i>{{surname}}</i>
+        <i>{{number}}</i>
+        <i>{{email}}</i>
+
+    </div>
+{{/user}}
+<div><p>Write the Name of Person to Delate</p> </div>
+<br>
+<form action="/delete" method="post">
+    <div>Name: <input type="text" name="username"></div><br>
+    <button type="submit">Delate</button>
+</form>
+</body>
+</html>
